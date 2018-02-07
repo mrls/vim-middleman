@@ -1,0 +1,39 @@
+*middleman.txt*	  A middleman wrapper and some extra goodies.
+
+Author: Mauro Morales <http://mrls.xyz>
+License: MIT
+
+
+This plugin is only available if 'compatible' is not set. So far has only been
+tested in Neovim. 
+
+
+INTRODUCTION                                    *middleman*
+
+Middleman is a great static site generator written in Ruby. Merged with the
+power of Vim I've found it to be a great tool for personal note taking.
+
+
+COMMANDS                                        *middleman-commands*
+
+                                                *fugitive-:Mserver*
+:Mserver		Start the middleman server.
+			Similar to :!middleman server but asynchronously
+
+
+                                                *fugitive-:MserverStop*
+:MserverStop		Stop the middleman server if running
+
+
+                                                *fugitive-:Marticle*
+:Marticle [args]        Creates a middleman article and opens it in the
+			current buffer.
+
+
+ABOUT                                           *middleman-about*
+
+Grab the latest version or report a bug on GitHub:
+
+http://github.com/mrls/vim-middleman
+
+ vim:tw=78:et:ft=help:norl:
