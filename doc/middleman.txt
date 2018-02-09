@@ -10,24 +10,30 @@ tested in Neovim.
 
 INTRODUCTION                                    *middleman*
 
-Middleman is a great static site generator written in Ruby. Merged with the
-power of Vim I've found it to be a great tool for personal note taking.
+Middleman is a great static site generator written in Ruby. This plugin is
+just a wrapper around the `middleman-cli` gem. When opening Vim on a middleman
+root directory, |middleman| will load the necesarry commands so you can
+interact with your site.
+
+If the `middleman-blog` gem, additional commands will be introduced to
+interact with your articles.
 
 
 COMMANDS                                        *middleman-commands*
 
-                                                *fugitive-:Mserver*
+                                                *middleman-:Mserver*
 :Mserver		Start the middleman server.
 			Similar to :!middleman server but asynchronously
 
 
-                                                *fugitive-:MserverStop*
+                                                *middleman-:MserverStop*
 :MserverStop		Stop the middleman server if running
 
 
-                                                *fugitive-:Marticle*
+                                                *middleman-:Marticle*
 :Marticle [args]        Creates a middleman article and opens it in the
-			current buffer.
+			current buffer. The `middleman-blog` gem has to be
+                        installed for this command to be available.
 
 
 ABOUT                                           *middleman-about*
